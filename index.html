@@ -575,6 +575,7 @@
 					function splat( x, y, dx, dy, color ) {
 						
 						splatProgram.bind();
+						//Coded by LockT :)
 						gl.uniform1i( splatProgram.uniforms.uTarget, velocity.first[ 2 ] );
 						gl.uniform1f( splatProgram.uniforms.aspectRatio, canvas.width / canvas.height );
 						gl.uniform2f( splatProgram.uniforms.point, x / canvas.width, 1.0 - y / canvas.height );
